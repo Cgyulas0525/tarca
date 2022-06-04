@@ -177,3 +177,11 @@
 
 
 
+<li class="{{ Request::is('utalvanies*') ? 'active' : '' }}">
+    <a href="{!! route('utalvanies.index') !!}"><img src={{ URL::asset('/public/img/menu/voucher_25.png')}}><span> Utalvány</span></a>
+</li>
+
+{{--<li class="{{ Request::is('utalvanytetels*') ? 'active' : '' }}">--}}
+{{--    <a href="{!! route('utalvanytetels.index') !!}"><i class="fa fa-edit"></i><span>Utalvanytetels</span></a>--}}
+{{--</li>--}}
+

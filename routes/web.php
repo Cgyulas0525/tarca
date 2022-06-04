@@ -178,3 +178,10 @@ Route::get('vevoirendelesfejs/megrendeltTermekDarabNyito', 'VevoirendelesfejCont
 
 Route::get('rendelttermek.index', 'RendeltTermekController@index')->name('rendelttermek');
 Route::get('rendelttermek.rendeltTermekNyomtatas/{veg}', 'RendeltTermekController@rendeltTermekNyomtatas')->name('rendeltTermekNyomtatas');
+
+
+Route::resource('utalvanies', 'UtalvanyController');
+
+Route::resource('utalvanytetels', 'UtalvanytetelController');
+Route::get('utalvanytetels/utalvanyTetelIndex/{id}', 'UtalvanytetelController@utalvanyTetelIndex')->name('utalvanyTetelIndex');
+Route::get('utalvanytetels/createMe/{id}', 'UtalvanytetelController@createMe')->name('utalvanyCreate');
